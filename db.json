@@ -1,0 +1,126 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "login": "writer@mail.com",
+      "password": 123456,
+      "role": "writer"
+    },
+    {
+      "id": 2,
+      "login": "reader@mail.com",
+      "password": 123456,
+      "role": "reader"
+    }
+  ],
+  "posts": [
+    {
+      "id": 1,
+      "title": "Название",
+      "description": "Описание отсутствует",
+      "claps": 13,
+      "createdAt": "2019-09-29T00:00:00.000Z",
+      "updateAt": "2020-07-08T08:16:24.345Z",
+      "userId": 1
+    },
+    {
+      "id": 2,
+      "title": "Название поста",
+      "description": "Текст",
+      "claps": 5,
+      "createdAt": "2019-09-29T00:00:00.000Z",
+      "updateAt": "2020-07-08T08:16:17.634Z",
+      "userId": 1
+    },
+    {
+      "id": 1594196227490,
+      "title": "Lorem ipsum dolor",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur quas distinctio eveniet in! Obcaecati iusto ab beatae numquam error recusandae dolores tenetur ratione tempora dignissimos, magnam ipsum sint ut quas?",
+      "claps": 0,
+      "createdAt": "2020-07-08T08:17:07.490Z",
+      "updateAt": "2020-07-08T08:17:07.490Z",
+      "userId": 1
+    },
+    {
+      "id": 1594196247346,
+      "title": "Без названия",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur quas distinctio eveniet in!",
+      "claps": 0,
+      "createdAt": "2020-07-08T08:17:27.346Z",
+      "updateAt": "2020-07-08T08:17:27.346Z",
+      "userId": 1
+    },
+    {
+      "id": 1594196259714,
+      "title": "Без названия",
+      "description": "Описание отсутствует",
+      "claps": 0,
+      "createdAt": "2020-07-08T08:17:39.714Z",
+      "updateAt": "2020-07-08T08:17:39.714Z",
+      "userId": 1
+    },
+    {
+      "id": 1594196264818,
+      "title": "Lorem ipsum dolor sit amet consectetur adipisicing",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur quas distinctio eveniet in! Obcaecati iusto ab beatae numquam error recusandae dolores tenetur ratione tempora dignissimos, magnam ipsum sint ut quas?",
+      "claps": 0,
+      "createdAt": "2020-07-08T08:17:44.818Z",
+      "updateAt": "2020-07-08T08:17:44.818Z",
+      "userId": 1
+    },
+    {
+      "id": 1594196278274,
+      "title": "consectetur adipisicing",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. ",
+      "claps": 1,
+      "createdAt": "2020-07-08T08:17:58.274Z",
+      "updateAt": "2020-07-08T08:17:58.274Z",
+      "userId": 1
+    },
+    {
+      "id": 1594196301225,
+      "title": "название",
+      "description": "Описание отсутствует",
+      "claps": 1,
+      "createdAt": "2020-07-08T08:18:21.226Z",
+      "updateAt": "2020-07-08T08:18:21.226Z",
+      "userId": 1
+    },
+    {
+      "id": 1594196305682,
+      "title": "Lorem ipsum dolor sit amet consectetur adipisicing",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur quas distinctio eveniet in! Obcaecati iusto ab beatae numquam error recusandae dolores tenetur ratione tempora dignissimos, magnam ipsum sint ut quas?",
+      "claps": 1,
+      "createdAt": "2020-07-08T08:18:25.682Z",
+      "updateAt": "2020-07-08T08:18:25.682Z",
+      "userId": 1
+    },
+    {
+      "id": 1594196313538,
+      "title": "amet consectetur adipisicing",
+      "description": "Consectetur quas distinctio eveniet in! Obcaecati iusto ab beatae numquam error recusandae dolores tenetur ratione tempora dignissimos, magnam ipsum sint ut quas?",
+      "claps": 2,
+      "createdAt": "2020-07-08T08:18:33.538Z",
+      "updateAt": "2020-07-08T08:18:41.586Z",
+      "userId": 1
+    },
+    {
+      "id": 1594196332578,
+      "title": "Lorem ipsum ",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. ",
+      "claps": 4,
+      "createdAt": "2020-07-08T08:18:52.578Z",
+      "updateAt": "2020-07-08T08:18:52.578Z",
+      "userId": 1
+    },
+    {
+      "id": 1594196350330,
+      "title": "Lorem ipsum dolor sit amet consectetur adipisicing",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur quas distinctio eveniet in! Obcaecati iusto ab beatae numquam error recusandae dolores tenetur ratione tempora dignissimos, magnam ipsum sint ut quas?",
+      "claps": 1,
+      "createdAt": "2020-07-08T08:19:10.330Z",
+      "updateAt": "2020-07-08T08:19:10.330Z",
+      "userId": 1
+    }
+  ]
+}
