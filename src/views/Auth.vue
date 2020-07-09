@@ -5,12 +5,17 @@
       <b-input
         ref="email"
         v-model="form.email"
-        type="email">
+        type="email"
+        :placeholder="'Введите адрес электронной почты'">
       </b-input>
     </b-field>
 
     <b-field label="Пароль">
-      <b-input v-model="form.password" type="password"></b-input>
+      <b-input
+        v-model="form.password"
+        type="password"
+        :placeholder="'Введите пароль'">
+      </b-input>
     </b-field>
 
     <footer>
