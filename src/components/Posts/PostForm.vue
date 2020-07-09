@@ -1,15 +1,29 @@
 <template>
   <section class="column is-6 is-offset-one-quarter">
     <b-field>
-      <b-input v-model="title" :has-counter="false" maxlength="50" placeholder="Название"></b-input>
+      <b-input
+        v-model="title"
+        :has-counter="false"
+        maxlength="50"
+        placeholder="Название">
+      </b-input>
     </b-field>
 
     <b-field>
-      <b-input v-model="description" type="textarea" placeholder="Описание"></b-input>
+      <b-input
+        v-model="description"
+        type="textarea"
+        placeholder="Описание">
+    </b-input>
     </b-field>
+
     <footer>
-      <b-button @click="close" class="is-pulled-left">Отменить</b-button>
-      <b-button @click="accept" class="is-pulled-right">Принять</b-button>
+      <router-link class="button is-pulled-left" to="/">
+        Отменить
+      </router-link>
+      <b-button @click="accept" class="is-pulled-right">
+        Принять
+      </b-button>
     </footer>
   </section>
 </template>
@@ -28,7 +42,7 @@ export default {
     return {
       title: '',
       description: '',
-      loading: false,
+      sending: false,
     };
   },
   methods: {
@@ -36,13 +50,13 @@ export default {
       this.$router.push('/');
     },
     async accept() {
+      let newPost = {};
       if (!this.loading) {
-        let newPost = {};
         if (this.post) {
           newPost = { ...this.post };
-          this.$set(newPost, 'title', this.title || 'Без названия');
-          this.$set(newPost, 'description', this.description || 'Описание отсутствует');
-          this.$set(newPost, 'updateAt', new Date());
+          newPost.title = this.title || 'Без названия';
+          newPost.description = this.description || 'Описание отсутствует';
+          newPost.updateAt = new Date();
         } else {
           newPost = {
             id: Date.now(),
@@ -54,9 +68,9 @@ export default {
             userId: 1,
           };
         }
-        this.loading = true;
+        this.sending = true;
         await this.action(newPost);
-        this.loading = false;
+        this.sending = false;
       }
     },
     selectedPost() {

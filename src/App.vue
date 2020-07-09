@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <AppHeader msg="Welcome to Your Vue.js App"/>
+    <AppHeader/>
     <router-view/>
   </div>
 </template>
@@ -9,7 +9,6 @@
 import AppHeader from '@/components/AppHeader.vue';
 
 export default {
-  name: 'Home',
   components: {
     AppHeader,
   },
@@ -18,7 +17,7 @@ export default {
 
 <style lang="sass">
 body
-  height: 100vh
+  min-height: 100vh
   background: #f7f7f7
 #app
   font-family: Avenir, Helvetica, Arial, sans-serif
@@ -32,7 +31,6 @@ body
 
 p
   word-wrap: break-word
-  white-space: pre-wrap
 hr
   border: 0
   margin: 0

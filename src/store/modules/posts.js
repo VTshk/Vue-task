@@ -1,16 +1,13 @@
+/* eslint-disable consistent-return */
 import axios from '@/axios';
 
 export default {
   state: {
     posts: [],
-    editablePost: null,
   },
   mutations: {
     setPosts(state, payload) {
       state.posts = payload;
-    },
-    setEditablePost(state, payload) {
-      state.editablePost = payload;
     },
   },
   actions: {
@@ -22,10 +19,10 @@ export default {
         console.log(err);
       }
     },
-    async getEditablePost({ commit }, id) {
+    async getEditablePost(_, id) {
       try {
         const res = await axios.get(`/posts/${id}`);
-        commit('setEditablePost', res.data);
+        return res.data;
       } catch (err) {
         console.log(err);
       }
@@ -55,7 +52,6 @@ export default {
   },
   getters: {
     posts: (s) => s.posts,
-    editablePost: (s) => s.editablePost,
   },
 
 };

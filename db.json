@@ -106,11 +106,11 @@
     },
     {
       "id": 1594196332578,
-      "title": "Lorem ipsum ",
+      "title": "Lorem ipsum",
       "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. ",
       "claps": 4,
       "createdAt": "2020-07-08T08:18:52.578Z",
-      "updateAt": "2020-07-08T08:18:52.578Z",
+      "updateAt": "2020-07-09T03:36:50.181Z",
       "userId": 1
     },
     {
@@ -119,7 +119,7 @@
       "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur quas distinctio eveniet in! Obcaecati iusto ab beatae numquam error recusandae dolores tenetur ratione tempora dignissimos, magnam ipsum sint ut quas?",
       "claps": 1,
       "createdAt": "2020-07-08T08:19:10.330Z",
-      "updateAt": "2020-07-08T08:19:10.330Z",
+      "updateAt": "2020-07-09T03:35:42.901Z",
       "userId": 1
     }
   ]

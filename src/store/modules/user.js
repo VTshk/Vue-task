@@ -1,3 +1,4 @@
+/* eslint-disable consistent-return */
 import axios from '@/axios';
 
 export default {
@@ -12,12 +13,12 @@ export default {
   },
   actions: {
     async login(_, { email }) {
-      // try {
-      const res = await axios.get(`/users?login=${email}`);
-      return res.data;
-      // } catch (err) {
-      //   console.log(err);
-      // }
+      try {
+        const res = await axios.get(`/users?login=${email}`);
+        return res.data;
+      } catch (err) {
+        console.log(err);
+      }
     },
     logout({ commit }) {
       commit('setUser', {});

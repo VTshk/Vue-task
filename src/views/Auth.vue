@@ -1,24 +1,33 @@
 <template>
-  <!-- <form @submit.prevent="onSubmit" class="column is-4 is-offset-4"> -->
   <section class="column is-4 is-offset-4">
+
     <b-field label="Email">
-      <b-input ref="email" v-model="form.email" type="email"></b-input>
+      <b-input
+        ref="email"
+        v-model="form.email"
+        type="email">
+      </b-input>
     </b-field>
 
-    <b-field label="Password">
+    <b-field label="Пароль">
       <b-input v-model="form.password" type="password"></b-input>
     </b-field>
+
     <footer>
-      <b-button @click="close" class="is-pulled-left">Отменить</b-button>
-      <b-button @click="onSubmit" type="submit" class="is-pulled-right">Принять</b-button>
+      <router-link class="button is-pulled-left" to="/">
+        Отменить
+      </router-link>
+      <b-button
+        @click="onSubmit"
+        type="submit"
+        class="is-pulled-right">
+        Принять
+      </b-button>
     </footer>
   </section>
-  <!-- </form> -->
 </template>
 
 <script>
-import { mapGetters } from 'vuex';
-
 export default {
   data() {
     return {
@@ -26,12 +35,7 @@ export default {
         email: '',
         password: '',
       },
-      sending: false,
     };
-  },
-  computed: {
-
-    ...mapGetters(['user']),
   },
   methods: {
     close() {

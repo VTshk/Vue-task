@@ -1,9 +1,12 @@
 <template>
   <div class="column">
     <div class="column is-offset-one-quarter">
-      <h1 class="is-pulled-left title mb-2">Создать пост</h1>
+      <h1 class="is-pulled-left title mb-2">
+        Создать пост
+      </h1>
     </div>
-    <PostForm :action="newPost => createPost(newPost)" />
+    <PostForm
+      :action="newPost => createPost(newPost)" />
   </div>
 </template>
 
