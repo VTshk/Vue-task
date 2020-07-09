@@ -3,7 +3,7 @@
     <div class="columns px-2 mb-0">
       <div class="column pb-0"></div>
 
-      <div class="column is-narrow pb-0" v-if="user.role === 'reader'">
+      <div class="column is-narrow pb-0" v-if="user.role === 'writer'">
         <b-button class="is-light" @click="editPost(post.id)">
           <b-icon class="fa fa-pencil-square-o"></b-icon>
           <span>Изменить</span>
@@ -14,7 +14,7 @@
         </b-button>
       </div>
 
-      <div v-if="user.role === 'writer'" class="column">
+      <div v-if="user.role === 'reader'" class="column">
         <b-button type="is-light is-pulled-right" @click="addClap(post)">
           <b-icon class="fa fa-sign-language"></b-icon>
           <span>{{post.claps}}</span>

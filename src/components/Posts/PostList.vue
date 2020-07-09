@@ -14,7 +14,7 @@
       </div>
       <div class="column is-narrow">
         <router-link
-          v-if="user.role === 'reader'"
+          v-if="user.role === 'writer'"
           class="button"
           to="/create">
           Создать пост
